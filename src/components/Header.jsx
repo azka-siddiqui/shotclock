@@ -1,3 +1,6 @@
+import {Link} from "react-router-dom";
+import "./Header.css";
+
 const Header = (props) => {
     console.log(props.name)
     return (
@@ -10,11 +13,21 @@ const Header = (props) => {
                   className="icon"
                 />
               </a>
+
+              <Link to = "/">
+              < img 
+                alt = "Home"
+                src = "https://cdn-icons-png.flaticon.com/512/25/25694.png"
+                className="icon"
+                />
+              </Link>
             </nav>
     
-            <div className="name">
-              <p>{props.name}</p>
-            </div>
+
+    
+          <Link to = "/profile" className = "name">
+            <p>{props.name}</p>
+          </Link>
           </header>
           );
 };

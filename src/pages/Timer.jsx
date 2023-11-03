@@ -43,6 +43,7 @@ const clearButtonStyle = {
   ...resetButtonStyle,
 };
 
+
 const Timer = () => {
   const [time, setTime] = useState(24);
   const [paused, setPaused] = useState(true);
@@ -89,7 +90,7 @@ const Timer = () => {
           {time < 10 ? `0${time}` : time}
         </p>
         <div className="button-container" style={containerStyle}>
-          {!clearClicked && (
+          {!clearClicked && time > 0 && ( // Conditionally render the button
             <button
               onClick={togglePaused}
               style={{
@@ -116,4 +117,3 @@ const Timer = () => {
 };
 
 export default Timer;
-

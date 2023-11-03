@@ -19,7 +19,9 @@ const countdownStyle = {
   fontSize: "35em",
   fontFamily: "Palatino, URW Palladio L, serif",
   textAlign: "center", // Center horizontally
-
+  verticalAlign: "middle", // Center vertically
+  height: "50vh", // Fill the full viewport height
+  marginBottom: "2em"
 };
 
 const countdownGreyStyle = {

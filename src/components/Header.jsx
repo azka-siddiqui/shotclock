@@ -7,7 +7,11 @@ const Header = (props) => {
     return (
           <header className="header">
             <nav>
-                <img src="basketballpic.png" />
+                <img
+              alt="Basketball Pic"
+              src="https://img.lovepik.com/free-png/20220109/lovepik-basketball-breakthrough-defensive-silhouette-png-image_401326162_wh860.png"
+              className="icon"
+            />
             </nav>
     
           <Link to = "/profile" className = "name">

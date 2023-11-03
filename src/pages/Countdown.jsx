@@ -15,13 +15,12 @@ const buttonStyle = {
 };
 
 const countdownStyle = {
-  fontSize: "35em",
+  fontSize: "42em",
   fontFamily: "Palatino, URW Palladio L, serif",
   textAlign: "center", // Center horizontally
-  verticalAlign: "middle", // Center vertically
   justifyContent: "center",
-  display: "table-cell", // Center vertically
-  height: "60vh", // Fill the full viewport height
+  marginLeft: "10em",
+  height: "50vh", // Fill the full viewport height
 };
 
 const countdownGreyStyle = {

@@ -11,15 +11,17 @@ const buttonStyle = {
   cursor: "pointer",
   transition: "background-color 0.25s",
   borderRadius: "4",
-  margin: "1.0em",
-  marginBottom: "-.08em",
+  margin: "0.5em auto", // Center horizontally with less margin
 };
 
 const countdownStyle = {
-  fontSize: "30em",
+  fontSize: "35em",
   fontFamily: "Palatino, URW Palladio L, serif",
-  marginTop: "-0.2em",
-  marginBottom: "-.08em",
+  textAlign: "center", // Center horizontally
+  verticalAlign: "middle", // Center vertically
+  display: "table-cell", // Center vertically
+  height: "100vh", // Fill the full viewport height
+  margin: 0, // Remove margin
 };
 
 const countdownGreyStyle = {

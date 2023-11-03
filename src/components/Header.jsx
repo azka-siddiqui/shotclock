@@ -8,9 +8,10 @@ const Header = (props) => {
           <header className="header">
             <nav>
                 <img
-              alt="Basketball Pic"
-              src="https://img.lovepik.com/free-png/20220109/lovepik-basketball-breakthrough-defensive-silhouette-png-image_401326162_wh860.png"
-              className="icon"
+                  alt="Basketball Icon"
+                  src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-basketball-dribble-sports-black-simple-buckle-png-image_4662791.jpg"
+                  className="icon"
+                  style={{ width: '200px', height: '200px' }}
             />
             </nav>
     

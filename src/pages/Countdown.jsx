@@ -11,7 +11,7 @@ const buttonStyle = {
   cursor: "pointer",
   transition: "background-color 0.25s",
   borderRadius: "4",
-  margin: "0.5em auto", // Center horizontally with less margin
+  margin: "0.1em" 
 };
 
 const countdownStyle = {
@@ -20,8 +20,7 @@ const countdownStyle = {
   textAlign: "center", // Center horizontally
   verticalAlign: "middle", // Center vertically
   display: "table-cell", // Center vertically
-  height: "100vh", // Fill the full viewport height
-  margin: 0, // Remove margin
+  height: "60vh", // Fill the full viewport height
 };
 
 const countdownGreyStyle = {

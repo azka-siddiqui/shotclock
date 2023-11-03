@@ -13,7 +13,7 @@ const Header = (props) => {
             src="https://www.dpcdsb.org/JOESS/PublishingImages/Pages/Forms/AllItems/Jaguar%20head.png"
             className="icon"
           />
-          <p className="slogan">Go Jags Go!</p>
+          <span className="slogan">Go Jags Go!</span>
         </div>
       </nav>
 

@@ -19,7 +19,7 @@ const countdownStyle = {
   fontSize: "42em",
   fontFamily: "Palatino, URW Palladio L, serif",
   marginTop: "-.08em",
-  marginBottom: "-.25em",
+  marginBottom: "-.18em",
 };
 
 const countdownGreyStyle = {

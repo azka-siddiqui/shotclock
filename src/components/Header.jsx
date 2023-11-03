@@ -9,7 +9,7 @@ const Header = (props) => {
             <nav>
                 <img
                   alt="Basketball Icon"
-                  src="./assets/basketballpic.png"
+                  src="basketballpic.png"
                   className="icon"
                   style={{ width: '110px', height: '110px' }}
                 />

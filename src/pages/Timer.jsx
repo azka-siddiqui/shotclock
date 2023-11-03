@@ -18,7 +18,7 @@ const buttonStyle = {
 
 const countdownStyle = {
   fontSize: "30em",
-  fontFamily: "Georgia, serif", // Apply the custom font
+  fontFamily: "Palatino, URW Palladio L, serif", // Apply the custom font
   marginTop: "-0.2em",
   marginBottom: "-.08em",
 };

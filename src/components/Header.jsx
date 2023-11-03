@@ -7,11 +7,8 @@ const Header = (props) => {
     return (
           <header className="header">
             <nav>
-                <img src="basketballpic.png" alt="Basketball Icon" style={{ width: '110px', height: '110px' }} />
+                <img src="basketballpic.png" />
             </nav>
-              
-    
-
     
           <Link to = "/profile" className = "name">
             <p>{props.name}</p>

@@ -11,7 +11,7 @@ const buttonStyle = {
   cursor: "pointer",
   transition: "background-color 0.25s",
   borderRadius: "4",
-  margin: "0.1em" 
+  margin: "0.4em" 
 };
 
 const countdownStyle = {
@@ -19,6 +19,7 @@ const countdownStyle = {
   fontFamily: "Palatino, URW Palladio L, serif",
   textAlign: "center", // Center horizontally
   verticalAlign: "middle", // Center vertically
+  justifyContent: "center",
   display: "table-cell", // Center vertically
   height: "60vh", // Fill the full viewport height
 };

@@ -9,7 +9,7 @@ const Header = (props) => {
             <nav>
                 <img
                   alt="Basketball Icon"
-                  src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-basketball-dribble-sports-black-simple-buckle-png-image_4662791.jpg"
+                  src="https://o.remove.bg/downloads/017e1465-c357-4814-b252-33bf387fec41/pngtree-basketball-dribble-sports-black-simple-buckle-png-image_4662791-removebg-preview.png"
                   className="icon"
                   style={{ width: '200px', height: '200px' }}
             />

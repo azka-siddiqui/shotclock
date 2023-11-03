@@ -108,28 +108,25 @@ const Timer = () => {
       <Header name="" />
 
       <div className="main">
-        {/* Conditional style for countdown based on clear button click */}
-        <p
-          style={
-            clearClicked
-              ? countdownGreyStyle
-              : time >= 10
-              ? countdownStyle
-              : { ...countdownStyle, letterSpacing: "-0.25em" }
-          }
-        >
+        <p style={clearClicked ? countdownGreyStyle : countdownStyle}>
           {time < 10 ? `0${time}` : time}
         </p>
         <div className="button-container" style={containerStyle}>
-          {startButton}
-          {/* Reset buttons for 24s and 14s */}
+          <button
+            onClick={togglePaused}
+            style={{
+              ...buttonStyle,
+              border: paused ? "1px solid green" : "1px solid red",
+            }}
+          >
+            {paused && !clearClicked ? "Start" : "Stop"}
+          </button>
           <button onClick={() => resetTime(24)} style={resetButtonStyle}>
             Reset 24s
           </button>
           <button onClick={() => resetTime(14)} style={resetButtonStyle}>
             Reset 14s
           </button>
-          {/* Clear button */}
           <button onClick={clearTime} style={clearButtonStyle}>
             Clear
           </button>

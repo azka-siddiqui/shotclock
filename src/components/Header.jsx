@@ -11,7 +11,7 @@ const Header = (props) => {
                   alt="Basketball Icon"
                   src="https://o.remove.bg/downloads/017e1465-c357-4814-b252-33bf387fec41/pngtree-basketball-dribble-sports-black-simple-buckle-png-image_4662791-removebg-preview.png"
                   className="icon"
-                  style={{ width: '60px', height: '60px' }}
+                  style={{ width: '90px', height: '90px' }}
             />
             </nav>
     

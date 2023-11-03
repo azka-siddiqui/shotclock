@@ -7,10 +7,9 @@ const Header = (props) => {
     return (
           <header className="header">
             <nav>
-                <img src="basketballpic.png"
-                    style={{ width: '110px', height: '110px' }}
-                />
+                <img src="basketballpic.png" alt="Basketball Icon" style={{ width: '110px', height: '110px' }} />
             </nav>
+              
     
 
     

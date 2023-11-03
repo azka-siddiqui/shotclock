@@ -19,3 +19,9 @@ header {
     width: 5vw;
     margin-left: 1em;
   }
+
+.slogan {
+  font-style: italic;
+  font-family: "Georgia", serif;
+  margin-left: 10px; /* Adjust the margin as needed */
+}

@@ -11,7 +11,8 @@ const Header = (props) => {
                   alt="Basketball Icon"
                   src="https://www.dpcdsb.org/JOESS/PublishingImages/Pages/Forms/AllItems/Jaguar%20head.png"
                   className="icon"
-                  style={{ width: '70px', height: '70px', marginTop: '15px'}}
+                  style={{ width: '80px', height: '80px', marginTop: '15px', marginLeft: '40px'}}
+            
             />
             </nav>
     

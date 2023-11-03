@@ -18,8 +18,8 @@ const buttonStyle = {
 const countdownStyle = {
   fontSize: "35em",
   fontFamily: "Palatino, URW Palladio L, serif",
-  marginTop: "-.05em",
-  marginBottom: "-.08em",
+  textAlign: "center", // Center horizontally
+
 };
 
 const countdownGreyStyle = {

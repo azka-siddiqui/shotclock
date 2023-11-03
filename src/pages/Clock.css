@@ -1,0 +1,11 @@
+.clock {
+    width: 100%;
+    text-align: right;
+  }
+  
+  .clock p {
+    line-height: 0;
+    font-size: 2.5rem;
+    padding-right: 1em;
+    color: rgb(236, 236, 236);
+  }

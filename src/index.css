@@ -14,6 +14,15 @@
   -webkit-text-size-adjust: 100%;
 }
 
+@font-face {
+  font-family: 'ScoreboardFont';
+  src: url('path-to-your-font-file.ttf') format('truetype');
+}
+
+.scoreboard-font {
+  font-family: 'ScoreboardFont', sans-serif; /* Use the custom font */
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -36,20 +45,31 @@ h1 {
   line-height: 1.1;
 }
 
+/* Container for evenly spaced buttons */
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1em;
+}
+
+/* Button styles */
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: none; /* Remove the border to make it black text on blue background */
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #64c8ff; /* Light blue background color */
+  color: #000; /* Black text color */
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: background-color 0.25s;
 }
+
 button:hover {
-  border-color: #646cff;
+  background-color: #4097d1; /* Darker blue background color on hover */
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -64,6 +84,6 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #a02b2b;
   }
 }

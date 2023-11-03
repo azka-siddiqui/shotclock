@@ -1,25 +1,21 @@
 import {Link} from "react-router-dom";
 import "./Header.css";
+import Clock from "../pages/Clock";
 
 const Header = (props) => {
     console.log(props.name)
     return (
           <header className="header">
             <nav>
-              <a href="https://github.com/1234tgk">
                 <img
-                  alt="GitHub Icon"
-                  src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg"
+                  alt="Basketball Icon"
+                  src="https://o.remove.bg/downloads/70f480f1-4fda-4fcd-90b6-aeb1ee002561/images-removebg-preview.png"
                   className="icon"
+                  style={{ width: '110px', height: '110px' }}
                 />
-              </a>
 
               <Link to = "/">
-              < img 
-                alt = "Home"
-                src = "https://cdn-icons-png.flaticon.com/512/25/25694.png"
-                className="icon"
-              />
+          
               </Link>
             </nav>
     
@@ -28,7 +24,9 @@ const Header = (props) => {
           <Link to = "/profile" className = "name">
             <p>{props.name}</p>
           </Link>
+          <Clock />
           </header>
+
           );
 };
 

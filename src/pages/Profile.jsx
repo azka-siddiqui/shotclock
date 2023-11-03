@@ -5,7 +5,7 @@ const Profile = () => {
     return (
 
         <div>
-            <Header name = "John Doe" />
+            <Header name = "Basketball Shotclock" />
             
 
             <div className = "main">

@@ -10,7 +10,7 @@ import Countdown from "./pages/Countdown.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
+    element: <Timer />
   },
   {
     path: "/profile",
@@ -21,8 +21,8 @@ const router = createBrowserRouter([
     element: <Count />,
   },
   {
-    path: "/timer",
-    element: <Timer />,
+    path: "/App",
+    element: <App />,
   },
   {
     path: "/countdown",

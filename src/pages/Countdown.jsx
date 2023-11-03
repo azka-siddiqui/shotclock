@@ -20,7 +20,7 @@ const countdownStyle = {
   textAlign: "center", // Center horizontally
   justifyContent: "center",
   marginLeft: "10em",
-  height: "50vh", // Fill the full viewport height
+  height: "75vh", // Fill the full viewport height
 };
 
 const countdownGreyStyle = {

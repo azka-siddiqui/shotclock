@@ -16,12 +16,10 @@ const buttonStyle = {
 };
 
 const countdownStyle = {
-  fontSize: "35em",
+  fontSize: "30em",
   fontFamily: "Palatino, URW Palladio L, serif",
-  textAlign: "center", // Center horizontally
-  verticalAlign: "middle", // Center vertically
-  height: "50vh", // Fill the full viewport height
-  marginBottom: "2em"
+  marginTop: "-0.2em",
+  marginBottom: "-.08em",
 };
 
 const countdownGreyStyle = {
@@ -118,4 +116,3 @@ const Timer = () => {
 };
 
 export default Timer;
-

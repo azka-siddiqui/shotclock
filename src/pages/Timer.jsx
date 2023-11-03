@@ -2,47 +2,7 @@ import { useState, useEffect } from "react";
 import Header from "../components/Header";
 
 // Styles for various elements
-const buttonStyle = {
-  padding: "0.6em 1.2em",
-  fontSize: "1em",
-  fontWeight: "500",
-  fontFamily: "inherit",
-  backgroundColor: "white",
-  color: "#000",
-  cursor: "pointer",
-  transition: "background-color 0.25s",
-  borderRadius: "4",
-  margin: "1.0em",
-  marginBottom: "-.08em",
-};
-
-const countdownStyle = {
-  fontSize: "30em",
-  fontFamily: "Palatino, URW Palladio L, serif", // Apply the custom font
-  marginTop: "-0.2em",
-  marginBottom: "-.08em",
-};
-
-const countdownGreyStyle = {
-  ...countdownStyle,
-  color: "grey",
-};
-
-const containerStyle = {
-  marginTop: "-2em",
-  display: "flex",
-  flexDirection: "row",
-  justifyContent: "center",
-};
-
-const resetButtonStyle = {
-  ...buttonStyle,
-  border: "1px solid #444",
-};
-
-const clearButtonStyle = {
-  ...resetButtonStyle,
-};
+// (Your style definitions here...)
 
 const Timer = () => {
   // State variables for time, paused state, and clear button click
@@ -112,15 +72,7 @@ const Timer = () => {
           {time < 10 ? `0${time}` : time}
         </p>
         <div className="button-container" style={containerStyle}>
-          <button
-            onClick={togglePaused}
-            style={{
-              ...buttonStyle,
-              border: paused ? "1px solid green" : "1px solid red",
-            }}
-          >
-            {paused && !clearClicked ? "Start" : "Stop"}
-          </button>
+          {startButton} {/* Conditionally render the "Start" button */}
           <button onClick={() => resetTime(24)} style={resetButtonStyle}>
             Reset 24s
           </button>

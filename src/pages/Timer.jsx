@@ -16,10 +16,10 @@ const buttonStyle = {
 };
 
 const countdownStyle = {
-  fontSize: "42em",
+  fontSize: "37em",
   fontFamily: "Palatino, URW Palladio L, serif",
   marginTop: "-.08em",
-  marginBottom: "-.18em",
+  marginBottom: "-.08em",
 };
 
 const countdownGreyStyle = {

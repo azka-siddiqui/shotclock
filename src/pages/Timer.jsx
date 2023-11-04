@@ -12,7 +12,7 @@ import Header from "../components/Header";
 //  borderRadius: "4",
 //  margin: "1.0em",
 //  marginBottom: "-.08em",
-};
+//};
 
 const buttonStyle = {
   padding: "0.5em 1em",

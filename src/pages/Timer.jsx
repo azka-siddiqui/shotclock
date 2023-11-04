@@ -22,17 +22,6 @@ const countdownStyle = {
 };
 
 const countdownGreyStyle = {
-
-    
-          
-            
-    
-
-          
-          Expand Down
-    
-    
-  
   ...countdownStyle,
   color: "grey",
 };

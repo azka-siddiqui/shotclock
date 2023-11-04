@@ -12,6 +12,7 @@ const Header = (props) => {
             alt="Basketball Icon"
             src="https://www.dpcdsb.org/JOESS/PublishingImages/Pages/Forms/AllItems/Jaguar%20head.png"
             className="icon"
+            style={{ width: '90px', height: '90px', marginTop: '15px', marginLeft: '30px' }}
           />
           <p className="slogan">Go Jags Go!</p>
         </div>

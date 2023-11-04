@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Header from "../components/Header";
-
 const buttonStyle = {
   padding: "0.6em 1.2em",
   fontSize: "1em",
@@ -16,48 +15,41 @@ const buttonStyle = {
 };
 
 const countdownStyle = {
-  fontSize: "35em",
+  fontSize: "42em",
   fontFamily: "Palatino, URW Palladio L, serif",
-  marginTop: "-.05em",
-  marginBottom: "-.08em",
+  marginTop: "-.08em",
+  marginBottom: "-.18em",
 };
 
 const countdownGreyStyle = {
   ...countdownStyle,
   color: "grey",
 };
-
 const containerStyle = {
   marginTop: "-2em",
   display: "flex",
   flexDirection: "row",
   justifyContent: "center",
 };
-
 const resetButtonStyle = {
   ...buttonStyle,
   border: "1px solid #444",
 };
-
 const clearButtonStyle = {
   ...resetButtonStyle,
 };
-
 const Timer = () => {
   const [time, setTime] = useState(24);
   const [paused, setPaused] = useState(true);
   const [clearClicked, setClearClicked] = useState(false);
-
   const togglePaused = () => {
     setPaused((paused) => !paused);
   };
-
   const resetTime = (newTime) => {
     setTime(newTime);
     setPaused(false);
     setClearClicked(false);
   };
-
   const clearTime = () => {
     setTime(0);
     setClearClicked(true);
@@ -65,7 +57,6 @@ const Timer = () => {
       togglePaused();
     }
   };
-
   useEffect(() => {
     let id;
     if (!paused && time > 0) {
@@ -76,20 +67,17 @@ const Timer = () => {
         setTime((time) => time - 1);
       }, 1000);
     }
-
     return () => clearInterval(id);
   }, [paused, time]);
-
   return (
     <div>
       <Header name="" />
-
       <div className="main">
         <p style={clearClicked ? countdownGreyStyle : countdownStyle}>
           {time < 10 ? `0${time}` : time}
         </p>
         <div className="button-container" style={containerStyle}>
-          {!clearClicked && (
+          {!clearClicked && time > 0 && ( // Conditionally render the button
             <button
               onClick={togglePaused}
               style={{
@@ -114,7 +102,5 @@ const Timer = () => {
     </div>
   );
 };
-
 export default Timer;
-
 

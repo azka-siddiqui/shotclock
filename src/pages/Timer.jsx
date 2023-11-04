@@ -2,17 +2,19 @@ import { useState, useEffect } from "react";
 import Header from "../components/Header";
 
 // Styles for various elements
+
 const buttonStyle = {
-  padding: "0.6em 1em",
+  padding: "0.5em 1em",
   fontSize: "1em",
-  fontWeight: "500",
+  fontWeight: "540",
   fontFamily: "inherit",
-  backgroundColor: "white",
+  backgroundColor: '#F5FFFA',
   color: "#000",
   cursor: "pointer",
   transition: "background-color 0.25s",
-  borderRadius: "4",
+  borderRadius: "10px", // Adjust the value to control the roundness of the border
   margin: '10px',
+  borderWidth: "1.9px", 
   marginBottom: '5px'
 };
 
@@ -26,7 +28,7 @@ const countdownStyle = {
 
 const countdownGreyStyle = {
   ...countdownStyle,
-  color: "grey",
+  color:  "#848884",
 };
 
 const containerStyle = {
@@ -47,6 +49,7 @@ const clearButtonStyle = {
 
 
 const Timer = () => {
+
   const [time, setTime] = useState(24);
   const [paused, setPaused] = useState(true);
   const [clearClicked, setClearClicked] = useState(false);
@@ -97,7 +100,7 @@ const Timer = () => {
               onClick={togglePaused}
               style={{
                 ...buttonStyle,
-                border: paused ? "1px solid green" : "1px solid red",
+                border: paused ? "1.5px solid forestgreen" : "1px solid red",
               }}
             >
               {paused ? "Start" : "Stop"}

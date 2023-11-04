@@ -38,6 +38,7 @@ body {
   place-items: center;
   min-width: 320px;
   max-height: 100vh;
+  border: solid navy;
 }
 
 h1 {
@@ -54,8 +55,7 @@ h1 {
 
 /* Button styles */
 button {
-  border-radius: 8px;
-  border: none; /* Remove the border to make it black text on blue background */
+  border-radius: 14px;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
@@ -64,6 +64,7 @@ button {
   color: #000; /* Black text color */
   cursor: pointer;
   transition: background-color 0.25s;
+  border-width: thick;
 }
 
 button:hover {

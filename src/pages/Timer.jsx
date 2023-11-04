@@ -19,7 +19,7 @@ const buttonStyle = {
   fontSize: "1em",
   fontWeight: "540",
   fontFamily: "inherit",
-  backgroundColor: '#EDEDED',
+  backgroundColor: '#D8BFD8',
   color: "#000",
   cursor: "pointer",
   transition: "background-color 0.25s",

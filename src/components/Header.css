@@ -3,7 +3,7 @@ header {
     justify-content: center;
     align-items: center;
   
-    background-color: cornflower blue;
+    background-color: cornflowerblue;
   }
   
   .name {
@@ -25,7 +25,7 @@ header {
   align-items: center;
 }
 
-slogan {
+.slogan {
   font-style: italic;
   font-size: 24px; /* Adjust the font size as needed */
   font-family: "Georgia", serif;

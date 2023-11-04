@@ -11,15 +11,15 @@ const buttonStyle = {
   cursor: "pointer",
   transition: "background-color 0.25s",
   borderRadius: "4",
-  margin: "1.0em",
-  marginBottom: "-.08em",
+  margin: "0.4em" 
 };
 
 const countdownStyle = {
-  fontSize: "37em",
+  fontSize: "55em",
   fontFamily: "Palatino, URW Palladio L, serif",
-  marginTop: "-.08em",
-  marginBottom: "-.08em",
+  textAlign: "center", // Center horizontally
+  justifyContent: "center",
+  height: "100vh", // Fill the full viewport height
 };
 
 const countdownGreyStyle = {
@@ -28,7 +28,6 @@ const countdownGreyStyle = {
 };
 
 const containerStyle = {
-  marginTop: "-2em",
   display: "flex",
   flexDirection: "row",
   justifyContent: "center",
@@ -42,7 +41,6 @@ const resetButtonStyle = {
 const clearButtonStyle = {
   ...resetButtonStyle,
 };
-
 
 const Timer = () => {
   const [time, setTime] = useState(24);
@@ -90,7 +88,7 @@ const Timer = () => {
           {time < 10 ? `0${time}` : time}
         </p>
         <div className="button-container" style={containerStyle}>
-          {!clearClicked && time > 0 && ( // Conditionally render the button
+          {!clearClicked && (
             <button
               onClick={togglePaused}
               style={{

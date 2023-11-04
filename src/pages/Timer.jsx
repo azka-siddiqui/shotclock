@@ -1,17 +1,32 @@
 import { useState, useEffect } from "react";
 import Header from "../components/Header";
+//const buttonStyle = {
+//  padding: "0.6em 1.2em",
+//  fontSize: "1em",
+//  fontWeight: "500",
+//  fontFamily: "inherit",
+//  backgroundColor: "white",
+//  color: "#000",
+//  cursor: "pointer",
+//  transition: "background-color 0.25s",
+//  borderRadius: "4",
+//  margin: "1.0em",
+//  marginBottom: "-.08em",
+};
+
 const buttonStyle = {
-  padding: "0.6em 1.2em",
+  padding: "0.5em 1em",
   fontSize: "1em",
-  fontWeight: "500",
+  fontWeight: "540",
   fontFamily: "inherit",
-  backgroundColor: "white",
+  backgroundColor: '#F5FFFA',
   color: "#000",
   cursor: "pointer",
   transition: "background-color 0.25s",
-  borderRadius: "4",
-  margin: "1.0em",
-  marginBottom: "-.08em",
+  borderRadius: "10px", // Adjust the value to control the roundness of the border
+  margin: '10px',
+  borderWidth: "1.9px", 
+  marginBottom: '5px'
 };
 
 const countdownStyle = {
@@ -82,7 +97,7 @@ const Timer = () => {
               onClick={togglePaused}
               style={{
                 ...buttonStyle,
-                border: paused ? "1px solid green" : "1px solid red",
+                border: paused ? "1.5px solid forestgreen" : "1px solid red",
               }}
             >
               {paused ? "Start" : "Stop"}

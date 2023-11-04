@@ -16,9 +16,9 @@ const buttonStyle = {
 };
 
 const countdownStyle = {
-  fontSize: "37em",
+  fontSize: "35em",
   fontFamily: "Palatino, URW Palladio L, serif",
-  marginTop: "-.08em",
+  marginTop: "-.05em",
   marginBottom: "-.08em",
 };
 
@@ -42,7 +42,6 @@ const resetButtonStyle = {
 const clearButtonStyle = {
   ...resetButtonStyle,
 };
-
 
 const Timer = () => {
   const [time, setTime] = useState(24);
@@ -90,7 +89,7 @@ const Timer = () => {
           {time < 10 ? `0${time}` : time}
         </p>
         <div className="button-container" style={containerStyle}>
-          {!clearClicked && time > 0 && ( // Conditionally render the button
+          {!clearClicked && (
             <button
               onClick={togglePaused}
               style={{
@@ -117,3 +116,5 @@ const Timer = () => {
 };
 
 export default Timer;
+
+
